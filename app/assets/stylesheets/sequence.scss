@@ -1,0 +1,35 @@
+
+@import "bootstrap";
+
+.content {
+  //border: 1px solid black;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 70px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.content:last-child {
+  margin-bottom: 70px;
+}
+
+.main-content p {
+  text-align: left;
+  padding: 10px;
+}
+
+.result {
+  font-size: 20px;
+}
+
+#red {
+  color: #B00100;
+}
+
+h4 {
+  text-align: left;
+  margin-top: 20px;
+}
+

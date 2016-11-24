@@ -1,0 +1,45 @@
+<h1>Результат выполнения программы</h1>
+<h4>Исходная последовательность:</h4>
+<p class="result">
+  <% @numbers.each_index do |x| %>
+      <% if x == @numbers.length - 1 %>
+        <span><%= @numbers[x] %>.</span>
+      <% else %>
+        <span><%= @numbers[x] %>, </span>
+      <% end %>
+  <% end %>
+</p>
+<h4>Найденные монотоно возрастающие последовательности:</h4>
+<p class="result">
+  <% if @result.any? %>
+    <% for element in @result %>
+          <% element.each_index do |x| %>
+              <% if x == element.length - 1 %>
+                  <span><%= element[x] %></span>
+              <% else %>
+                  <span><%= element[x] %>,  </span>
+              <% end %>
+          <% end %>
+          <br>
+    <% end %>
+  <% end %>
+</p>
+<h4>Самая длинная последовательность: </h4>
+<p class="result">
+  <% @max_seq.each_index do |i| %>
+      <% if i == @max_seq.length - 1 %>
+          <span><%= @max_seq[i] %>.</span>
+      <% else %>
+          <span><%= @max_seq[i] %>,  </span>
+      <% end %>
+  <% end %>
+</p>
+<h4>Наглядный вид:</h4>
+<p class="result">
+  <%= @result %>
+</p>
+
+
+
+
+

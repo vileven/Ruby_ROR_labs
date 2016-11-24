@@ -1,0 +1,23 @@
+<div class="content input-c">
+  <h1>Лабораторная работа</h1>
+  <h2>Володин Сергей Олегович</h2>
+  <h2>группа ИУ6-33</h2>
+  <h3>Задание: </h3>
+  <p>
+    Написать программу, которая вводит цепочку целых чисел (количество чисел не менее 10) и определяет наиболее
+    длинную монотонно возрастаю- щую их последовательность. Вывести на печать введенную цепочку, все найденные
+    последовательности и наиболее длинную из них. При про- граммировании использовать функцию.
+  </p>
+  <%= form_tag("/sequence/view.json", :method => "get", remote: true, id: 'seq_form') do %>
+      <div class="form-group">
+        <%= label_tag("Введите массив из 10 элементов") %>
+        <%= text_field_tag(:str) %> </br>
+      </div>
+      <%= submit_tag "Получить результат", class: "btn btn-large btn-primary" %>
+  <% end %>
+  <!--<p>Find me in app/views/sequence/input.html.erb</p>-->
+</div>
+
+<div class="content hide" id="result">
+
+</div>
