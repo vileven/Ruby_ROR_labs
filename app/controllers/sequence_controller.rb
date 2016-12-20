@@ -1,13 +1,11 @@
 class SequenceController < ApplicationController
-  # attr_reader :first_odd
   def input
-
   end
 
   def view
     @numbers = params[:str].split
 
-    # if numbers.size != 10
+    # if @numbers.size != 10
     #   @result = ["Ошибка: размер массива должен быть равен 10 элементам"]
     #   @index = -1
     #   return
